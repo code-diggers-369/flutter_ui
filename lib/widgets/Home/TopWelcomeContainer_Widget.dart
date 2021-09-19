@@ -18,7 +18,7 @@ class WelcomeContainer extends StatelessWidget {
             children: [
               Text(
                 "Welcome",
-                style: TextStyle(fontSize: 10),
+                style: TextStyle(fontSize: 11),
               ),
               Text(
                 "Prajapati Haresh",
@@ -32,6 +32,18 @@ class WelcomeContainer extends StatelessWidget {
               MyPic,
               height: 50,
               width: 50,
+              cacheHeight: 50,
+              cacheWidth: 50,
+              loadingBuilder: (BuildContext ctx, Widget child,
+                  ImageChunkEvent loadingProgress) {
+                if (loadingProgress == null) {
+                  return child;
+                } else {
+                  return Container(
+                    color: Colors.grey,
+                  );
+                }
+              },
             ),
           )
         ],
