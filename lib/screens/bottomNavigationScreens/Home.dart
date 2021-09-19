@@ -15,11 +15,11 @@ class _HomeState extends State<Home> {
     return Container(
       child: Column(
         children: [
-          WelcomeContainer(),
+          welcomeContainer(),
           SizedBox(
             height: 10,
           ),
-          BigCard(),
+          bigCard(context),
           SizedBox(
             height: 10,
           )

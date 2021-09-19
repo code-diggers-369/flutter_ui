@@ -30,15 +30,15 @@ class _ProfileState extends State<Profile> {
           SizedBox(
             height: 10,
           ),
-          TopProfileContainer(),
+          topProfileContainer(context),
           SizedBox(
             height: 40,
           ),
-          Dashboard(),
+          dashboard(context),
           SizedBox(
             height: 30,
           ),
-          Account()
+          account(context)
         ],
       ),
     );
