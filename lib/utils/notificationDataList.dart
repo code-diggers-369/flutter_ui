@@ -42,4 +42,78 @@ var notificationDataList = [
       transaction: "credit",
       money: 500,
       date: "08/08/2021"),
+  Notification(
+      name: "Navin Bhavsar",
+      time: "02:32 PM",
+      transaction: "credit",
+      money: 2000,
+      date: "04/08/2021"),
+  Notification(
+      name: "Nikhil Patel",
+      time: "04:30 PM",
+      transaction: "debit",
+      money: 1000,
+      date: "01/08/2021"),
+  Notification(
+      name: "Kamlesh Prajapati",
+      time: "08:00 PM",
+      transaction: "credit",
+      money: 4000,
+      date: "10/09/2021"),
+  //
+  //
+  Notification(
+      name: "Mohit Mistry",
+      time: "10:10 PM",
+      transaction: "credit",
+      money: 2000,
+      date: "18/09/2021"),
+  Notification(
+      name: "Prashant Prajapati",
+      time: "08:00 AM",
+      transaction: "debit",
+      money: 1000,
+      date: "10/09/2021"),
+  Notification(
+      name: "Harsh Joshi",
+      time: "05:12 PM",
+      transaction: "credit",
+      money: 5000,
+      date: "08/09/2021"),
+  Notification(
+      name: "Mohit Mistry",
+      time: "09:50 PM",
+      transaction: "debit",
+      money: 1000,
+      date: "29/08/2021"),
+  Notification(
+      name: "Prashant Prajapati",
+      time: "05:00 PM",
+      transaction: "credit",
+      money: 3000,
+      date: "10/08/2021"),
+  Notification(
+      name: "Harsh Joshi",
+      time: "04:32 PM",
+      transaction: "credit",
+      money: 500,
+      date: "08/08/2021"),
+  Notification(
+      name: "Navin Bhavsar",
+      time: "02:32 PM",
+      transaction: "credit",
+      money: 2000,
+      date: "04/08/2021"),
+  Notification(
+      name: "Nikhil Patel",
+      time: "04:30 PM",
+      transaction: "debit",
+      money: 1000,
+      date: "01/08/2021"),
+  Notification(
+      name: "Kamlesh Prajapati",
+      time: "08:00 PM",
+      transaction: "credit",
+      money: 4000,
+      date: "10/09/2021"),
 ];

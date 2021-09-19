@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task/utils/notificationDataList.dart';
 import 'package:task/widgets/Notification/BuildCardView_Widget.dart';
 
 class Notification extends StatefulWidget {
@@ -13,17 +14,25 @@ class _NotificationState extends State<Notification> {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.all(5),
-      child: ListView.builder(
-        itemCount: 5,
-        shrinkWrap: true,
-        physics: const BouncingScrollPhysics(
-          parent: AlwaysScrollableScrollPhysics(),
-        ),
-        scrollDirection: Axis.vertical,
-        itemBuilder: (BuildContext context, int index) {
-          return buildCardView(context);
-        },
-      ),
+      child: RefreshIndicator(
+          onRefresh: () async {
+            print("refresh");
+          },
+          child: Column(
+            children: [
+              Center(child: Text("Notification")),
+              ListView.builder(
+                itemCount: notificationDataList.length,
+                // physics: const BouncingScrollPhysics(
+                //   parent: AlwaysScrollableScrollPhysics(),
+                // ),
+                scrollDirection: Axis.vertical,
+                itemBuilder: (BuildContext context, int index) {
+                  return buildCardView(context, notificationDataList[index]);
+                },
+              ),
+            ],
+          )),
     );
   }
 }
