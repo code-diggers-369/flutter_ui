@@ -26,26 +26,14 @@ class WelcomeContainer extends StatelessWidget {
               ),
             ],
           ),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(50),
+          ClipOval(
             child: Image.network(
               MyPic,
-              height: 50,
               width: 50,
-              cacheHeight: 50,
-              cacheWidth: 50,
-              loadingBuilder: (BuildContext ctx, Widget child,
-                  ImageChunkEvent loadingProgress) {
-                if (loadingProgress == null) {
-                  return child;
-                } else {
-                  return Container(
-                    color: Colors.grey,
-                  );
-                }
-              },
+              height: 50,
+              fit: BoxFit.fill,
             ),
-          )
+          ),
         ],
       ),
     );
