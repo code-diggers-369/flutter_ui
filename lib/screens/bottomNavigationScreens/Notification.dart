@@ -12,27 +12,34 @@ class Notification extends StatefulWidget {
 class _NotificationState extends State<Notification> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.all(5),
-      child: RefreshIndicator(
-          onRefresh: () async {
-            print("refresh");
-          },
-          child: Column(
-            children: [
-              Center(child: Text("Notification")),
-              ListView.builder(
-                itemCount: notificationDataList.length,
-                // physics: const BouncingScrollPhysics(
-                //   parent: AlwaysScrollableScrollPhysics(),
-                // ),
+    return RefreshIndicator(
+      onRefresh: () async {
+        // print("object")
+      },
+      child: Container(
+        // decoration: BoxDecoration(color: Color.fromRGBO(244, 244, 244, 1)),
+        margin: EdgeInsets.all(5),
+        child: Column(
+          children: [
+            Center(child: Text("Notification")),
+            Expanded(
+              child: ListView.builder(
+                itemCount: notificationDataList.length > 0
+                    ? notificationDataList.length
+                    : 1,
+                shrinkWrap: true,
+                physics: const BouncingScrollPhysics(
+                  parent: AlwaysScrollableScrollPhysics(),
+                ),
                 scrollDirection: Axis.vertical,
                 itemBuilder: (BuildContext context, int index) {
                   return buildCardView(context, notificationDataList[index]);
                 },
               ),
-            ],
-          )),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

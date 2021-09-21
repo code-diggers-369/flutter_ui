@@ -10,13 +10,19 @@ Widget topProfileContainer(BuildContext context) {
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
         ClipOval(
-          child: Image.network(
-            MyPic,
-            width: 100,
+          child: Image.asset(
+            'assets/images/my.png',
             height: 100,
-            // fit: BoxFit.cover,
+            width: 100,
             fit: BoxFit.fill,
           ),
+          // child: Image.network(
+          //   MyPic,
+          //   width: 100,
+          //   height: 100,
+          //   // fit: BoxFit.cover,
+          //   fit: BoxFit.fill,
+          // ),
         ),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,

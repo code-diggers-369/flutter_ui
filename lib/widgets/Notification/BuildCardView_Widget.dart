@@ -56,9 +56,20 @@ Widget buildCardView(context, tempData) {
                         color: Colors.red.shade300,
                         fontSize: 15),
                   ),
-            Text(
-              tempData.time.toString(),
-              style: TextStyle(fontSize: 10),
+            Row(
+              children: [
+                Text(
+                  tempData.date.toString(),
+                  style: TextStyle(fontSize: 10),
+                ),
+                SizedBox(
+                  width: 5,
+                ),
+                Text(
+                  tempData.time.toString(),
+                  style: TextStyle(fontSize: 10),
+                ),
+              ],
             )
           ],
         )
@@ -71,7 +82,7 @@ Widget buildCardView(context, tempData) {
 Color generateRandomColor() {
   Random random = Random();
   // Pick a random number in the range [0.0, 1.0)
-  double randomDouble = random.nextDouble();
+  // double randomDouble = random.nextDouble();
 
   // return Color((randomDouble * 0xFFFFFF).toInt()).withOpacity(1.0);
   return Color.fromARGB(

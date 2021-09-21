@@ -21,26 +21,31 @@ Widget welcomeContainer() {
           ],
         ),
         ClipOval(
-          child: Image.network(
-            MyPic,
-            width: 50,
+          child: Image.asset(
+            'assets/images/my.png',
             height: 50,
+            width: 50,
             fit: BoxFit.fill,
-            loadingBuilder: (context, child, loadingProgress) {
-              if (loadingProgress == null) return child;
-
-              return Center(
-                child: Container(
-                  height: 50,
-                  width: 50,
-                  color: Colors.grey.shade300,
-                ),
-              );
-              // You can use LinearProgressIndicator or CircularProgressIndicator instead
-            },
-            errorBuilder: (context, error, stackTrace) =>
-                Text('Some errors occurred!'),
           ),
+          // child: Image.network(
+          //   MyPic,
+          //   width: 50,
+          //   height: 50,
+          //   fit: BoxFit.fill,
+          //   loadingBuilder: (context, child, loadingProgress) {
+          //     if (loadingProgress == null) return child;
+
+          //     return Center(
+          //       child: Container(
+          //         height: 50,
+          //         width: 50,
+          //         color: Colors.grey.shade300,
+          //       ),
+          //     );
+          //   },
+          //   errorBuilder: (context, error, stackTrace) =>
+          //       Text('Some errors occurred!'),
+          // ),
         ),
       ],
     ),

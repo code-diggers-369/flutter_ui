@@ -17,6 +17,7 @@ class _ProfileState extends State<Profile> {
     return Container(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
+      decoration: BoxDecoration(color: Color.fromRGBO(244, 244, 244, 1)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
