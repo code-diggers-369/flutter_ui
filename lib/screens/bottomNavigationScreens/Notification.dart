@@ -21,7 +21,11 @@ class _NotificationState extends State<Notification> {
         margin: EdgeInsets.all(5),
         child: Column(
           children: [
-            Center(child: Text("Notification")),
+            Center(
+                child: Text(
+              "Notification",
+              style: TextStyle(fontSize: 20),
+            )),
             Expanded(
               child: ListView.builder(
                 itemCount: notificationDataList.length > 0
