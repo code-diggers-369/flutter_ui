@@ -82,13 +82,13 @@ Widget buildCardView(context, tempData) {
 Color generateRandomColor() {
   Random random = Random();
   // Pick a random number in the range [0.0, 1.0)
-  // double randomDouble = random.nextDouble();
+  double randomDouble = random.nextDouble();
 
-  // return Color((randomDouble * 0xFFFFFF).toInt()).withOpacity(1.0);
-  return Color.fromARGB(
-    255,
-    random.nextInt(256),
-    random.nextInt(256),
-    random.nextInt(256),
-  );
+  return Color((randomDouble * 0xFFFFFF).toInt()).withOpacity(1.0);
+  // return Color.fromARGB(
+  //   255,
+  //   random.nextInt(256),
+  //   random.nextInt(256),
+  //   random.nextInt(256),
+  // );
 }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:task/services/allUrl.dart';
 
 Widget welcomeContainer() {
   return Container(

@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           buildNavBarItem(FeatherIcons.home, 0),
-          buildNavBarItem(FeatherIcons.search, 1),
+          buildNavBarItem(FeatherIcons.barChart2, 1),
           buildNavBarItem(FeatherIcons.bell, 2),
           buildNavBarItem(FeatherIcons.user, 3),
         ],
